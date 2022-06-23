@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("idcategories",categoryID);
         intent.putExtra("categoriesname",categoryName);
 
+
         startActivityForResult(intent,REQUEST_CODE_QUESTION);
 
     }

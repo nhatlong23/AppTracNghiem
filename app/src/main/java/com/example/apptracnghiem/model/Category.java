@@ -4,11 +4,10 @@ public class Category {
 
     private int id;
     private String name;
-    public Category(String ngữ_văn) {
-    }
+    public Category(){}
 
-    public Category() {
-        this.id = id;
+    public Category(String name) {
+        this.name = name;
     }
 
     public int getId() {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LanguageInjectionConfiguration">
+    <injection language="encoding-reference" injector-id="java">
+      <display-name>Category.Category (com.example.apptracnghiem.model)</display-name>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("Category").withParameters("java.lang.String").definedInClass("com.example.apptracnghiem.model.Category"))]]></place>
+    </injection>
+  </component>
+</project>
