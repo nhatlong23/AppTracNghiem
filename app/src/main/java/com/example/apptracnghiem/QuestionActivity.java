@@ -206,10 +206,10 @@ public class QuestionActivity extends AppCompatActivity {
 
     private void updateCountDownText() {
         int minutes = (int) ((timeLeftInMillis/1000)/60);
-        int seconds = (int) ((timeLeftInMillis/100)%60);
+        int seconds = (int) ((timeLeftInMillis/1000)%60);
         String timeFormatted = String.format(Locale.getDefault(),"%02d:%02d",minutes,seconds);
         textViewCountDown.setText(timeFormatted);
-        if (timeLeftInMillis < 1000){
+        if (timeLeftInMillis < 10000){
             textViewCountDown.setTextColor(Color.RED);
         }
         else{
