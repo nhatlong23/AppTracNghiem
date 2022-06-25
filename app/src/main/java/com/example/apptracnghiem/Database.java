@@ -86,9 +86,9 @@ public class Database extends SQLiteOpenHelper {
 
         values.put(Table.QuestionsTable.COLUMN_QUESTION,question.getQuestion());
         values.put(Table.QuestionsTable.COLUMN_OPTION1,question.getOption1());
-        values.put(Table.QuestionsTable.COLUMN_OPTION1,question.getOption2());
-        values.put(Table.QuestionsTable.COLUMN_OPTION1,question.getOption3());
-        values.put(Table.QuestionsTable.COLUMN_OPTION1,question.getOption4());
+        values.put(Table.QuestionsTable.COLUMN_OPTION2,question.getOption2());
+        values.put(Table.QuestionsTable.COLUMN_OPTION3,question.getOption3());
+        values.put(Table.QuestionsTable.COLUMN_OPTION4,question.getOption4());
         values.put(Table.QuestionsTable.COLUMN_ANSWER,question.getAnswer());
         values.put(Table.QuestionsTable.COLUMN_CATEGORY_ID,question.getCategoryId());
 
@@ -140,7 +140,7 @@ public class Database extends SQLiteOpenHelper {
         Question q11 = new Question("Hà Nội là thủ đô nước nào?",
                 "A. Mỹ", "B. Cà Màu", "C.Nam Cực","D.Việt Nam", 4, 3);
         insertQuestion(q11);
-        Question q12 = new Question("Trong câu “Thưa ông, chúng cháu ở Gia Lâm lên đấy ạ. Đi bốn năm hôm mới lên đến đây, vất vả quá!”. Câu nói “Thưa ông” thuộc thành phần gì của câu?",
+        Question q12 = new Question("?",
                 " A. Phụ chú", " B. Cảm thán", "C. Gọi đáp","D. Tình thái", 3, 1);
         insertQuestion(q12);
         Question q13 = new Question("Đỉnh núi Pan-xi-păng có độ cao bao nhiêu mét?",

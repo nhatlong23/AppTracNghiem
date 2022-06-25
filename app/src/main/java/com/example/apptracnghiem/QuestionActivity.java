@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.example.apptracnghiem.model.Question;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Locale;
 
@@ -74,20 +73,17 @@ public class QuestionActivity extends AppCompatActivity {
         //show cau hoi va dap an
         showNextQuestion();
         //button xac nhan,cau tiep, hoan thanh
-        buttonConfirmNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!answered){
-                    if(rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()){
-                        checkAnswer();
-                    }
-                    else {
-                        Toast.makeText(QuestionActivity.this,"Hãy chọn đáp án",Toast.LENGTH_SHORT).show();
-                    }
+        buttonConfirmNext.setOnClickListener(view -> {
+            if(!answered){
+                if(rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()){
+                    checkAnswer();
                 }
                 else {
-                    showNextQuestion();
+                    Toast.makeText(QuestionActivity.this,"Hãy chọn đáp án",Toast.LENGTH_SHORT).show();
                 }
+            }
+            else {
+                showNextQuestion();
             }
         });
 
